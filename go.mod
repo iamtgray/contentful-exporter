@@ -1,4 +1,4 @@
-module github.com/infinityworks/github-exporter
+module github.com/infinityworks/contentful-exporter
 
 go 1.14
 
