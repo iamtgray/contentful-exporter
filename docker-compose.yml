@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  contentful-exporter:
+    tty: true
+    stdin_open: true
+    expose:
+      - 9171
+    ports:
+      - 9171:9171
+    image: infinityworks/contentful-exporter:latest
+    environment:
+      - SPACE_ID=<ID of the space you wish to monitor>
+      - AUTH_TOKEN=<your contentful api token>
+      - ENVIRONMENTS<comma seperated list of environments>
